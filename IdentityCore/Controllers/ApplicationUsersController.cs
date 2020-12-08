@@ -54,7 +54,7 @@ namespace IdentityCore.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("FirstName,LastName,Street,City,Province,PostalCode,Country")] ApplicationUser applicationUser)
+        public async Task<IActionResult> Create([Bind("FirstName,LastName,Street,City,Province,PostalCode,Country,Email")] ApplicationUser applicationUser)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace IdentityCore.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("FirstName,LastName,Street,City,Province,PostalCode,Country")] ApplicationUser applicationUser)
+        public async Task<IActionResult> Edit(string id, [Bind("FirstName,LastName,Street,City,Province,PostalCode,Country,Email")] ApplicationUser applicationUser)
         {
             if (id != applicationUser.Id)
             {
