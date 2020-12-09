@@ -45,7 +45,7 @@ namespace IdentityCore.Models
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                this.UserName = ex.Message;
             }
 
         }

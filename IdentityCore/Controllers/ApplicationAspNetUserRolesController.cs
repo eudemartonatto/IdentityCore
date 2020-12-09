@@ -51,15 +51,14 @@ namespace IdentityCore.Controllers
                orderby geral.UserName
                select new { value = geral.Id, text = geral.UserName }
              ).ToList();
-            ViewBag.UserId = new SelectList(mls, "value", "text");
+            ViewBag.User = new SelectList(mls, "value", "text");
 
             mls = (
                from geral in _context.ApplicationRoles
                orderby geral.Name
                select new { value = geral.Id, text = geral.Name }
              ).ToList();
-
-            ViewBag.RoleId = new SelectList(mls, "value", "text");
+            ViewBag.Role = new SelectList(mls, "value", "text");
 
 
             return View();

@@ -60,7 +60,6 @@ C:\Users\Win10\source\repos\IdentityCore\IdentityCore\bin\Debug\netcoreapp3.1\ru
 C:\Users\Win10\source\repos\IdentityCore\IdentityCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Win10\source\repos\IdentityCore\IdentityCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Win10\source\repos\IdentityCore\IdentityCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Win10\source\repos\IdentityCore\IdentityCore\obj\Debug\netcoreapp3.1\IdentityCore.csprojAssemblyReference.cache
 C:\Users\Win10\source\repos\IdentityCore\IdentityCore\obj\Debug\netcoreapp3.1\IdentityCore.AssemblyInfoInputs.cache
 C:\Users\Win10\source\repos\IdentityCore\IdentityCore\obj\Debug\netcoreapp3.1\IdentityCore.AssemblyInfo.cs
 C:\Users\Win10\source\repos\IdentityCore\IdentityCore\obj\Debug\netcoreapp3.1\IdentityCore.csproj.CoreCompileInputs.cache
