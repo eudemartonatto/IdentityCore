@@ -16,8 +16,7 @@ namespace IdentityCore.Models
 
         public ApplicationAspNetUserRoles(string userId, string roleId) : base()
         {        
-            string connectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=aspnet-IdentityCore-3BD2EB4F-0BBD-49A4-8186-8F023F37A994;Integrated Security=true";               
-            // string queryString = "SELECT UserName from AspNetUsers WHERE ID = @UserId ";
+            string connectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=aspnet-IdentityCore-3BD2EB4F-0BBD-49A4-8186-8F023F37A994;Integrated Security=true";                           
             string queryString =
                 "SELECT r.Name roleName, u.UserName userName" +
                   " FROM AspNetUserRoles ur, AspNetUsers u, AspNetRoles r " +
