@@ -235,3 +235,6 @@ C:\Users\Win10\source\repos\IdentityCore\IdentityCore\obj\Debug\netcoreapp3.1\Ra
 C:\Users\Win10\source\repos\IdentityCore\IdentityCore\obj\Debug\netcoreapp3.1\Razor\Views\ApplicationAspNetUserRoles\Details.cshtml.g.cs
 C:\Users\Win10\source\repos\IdentityCore\IdentityCore\obj\Debug\netcoreapp3.1\Razor\Views\ApplicationAspNetUserRoles\Edit.cshtml.g.cs
 C:\Users\Win10\source\repos\IdentityCore\IdentityCore\obj\Debug\netcoreapp3.1\Razor\Views\ApplicationAspNetUserRoles\Index.cshtml.g.cs
+C:\Users\Win10\source\repos\IdentityCore\IdentityCore\obj\Debug\netcoreapp3.1\IdentityCore.csprojAssemblyReference.cache
+C:\Users\Win10\source\repos\IdentityCore\IdentityCore\bin\Debug\netcoreapp3.1\PagedList.dll
+C:\Users\Win10\source\repos\IdentityCore\IdentityCore\bin\Debug\netcoreapp3.1\PagedList.Mvc.dll

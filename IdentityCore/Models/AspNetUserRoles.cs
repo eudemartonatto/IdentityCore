@@ -2,6 +2,12 @@
 using System;
 using Microsoft.Data.SqlClient;
 using System.ComponentModel;
+using IdentityCore.Areas;
+using IdentityCore.Controllers;
+using IdentityCore.Data;
+using IdentityCore.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
 
 namespace IdentityCore.Models
 {
@@ -10,12 +16,33 @@ namespace IdentityCore.Models
         
         public string RoleName;
         public string UserName;
-        
+     
+        private readonly ApplicationDbContext _context;
+
+        /* 
+        public ApplicationAspNetUserRoles(ApplicationDbContext context, string userId, string roleId) : base()
+        {
+            _context = context;
+            string usuario = userId;
+            string regra = roleId;
+        }
+     */
+
         [DefaultValue("ApplicationAspNetUserRoles")]
         public string Discriminator;
 
-        public ApplicationAspNetUserRoles(string userId, string roleId) : base()
-        {        
+        public ApplicationAspNetUserRoles(ApplicationDbContext context, string userId, string roleId) : base()
+        {            
+            /** se comentar este trecho o app funciona, ocntext existe, mas as tabelas não funcionam*/
+            var ur = (
+               from geral in context.ApplicationAspNetUserRoles
+               select new { value = geral.Id, text = geral.UserName }
+             ).ToList();
+            var userRole = new SelectList(ur, "value", "text");
+            /**/
+
+
+
             string connectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=aspnet-IdentityCore-3BD2EB4F-0BBD-49A4-8186-8F023F37A994;Integrated Security=true";                           
             string queryString =
                 "SELECT r.Name roleName, u.UserName userName" +
