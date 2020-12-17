@@ -36,7 +36,7 @@ namespace IdentityCore.Models
             /** se comentar este trecho o app funciona, context existe, mas as tabelas não funcionam*/
             var ur = (
                from geral in context.ApplicationAspNetUserRoles
-               select new { value = geral.UserId, text = geral.RoleId }
+               select new { uId = geral.UserId, rId = geral.RoleId }
              ).ToList();
             var userRole = new SelectList(ur, "value", "text");
             /**/
