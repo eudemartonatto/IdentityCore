@@ -38,7 +38,7 @@ namespace IdentityCore.Models
                from geral in context.ApplicationAspNetUserRoles
                select new { uId = geral.UserId, rId = geral.RoleId }
              ).ToList();
-            var userRole = new SelectList(ur, "value", "text");
+            var userRole = new SelectList(ur, "uId", "rId");
             /**/
 
 
