@@ -33,7 +33,7 @@ namespace IdentityCore.Models
 
         public ApplicationAspNetUserRoles(ApplicationDbContext context, string userId, string roleId) : base()
         {            
-            /** se comentar este trecho o app funciona, ocntext existe, mas as tabelas não funcionam*/
+            /** se comentar este trecho o app funciona, context existe, mas as tabelas não funcionam*/
             var ur = (
                from geral in context.ApplicationAspNetUserRoles
                select new { value = geral.Id, text = geral.UserName }
